@@ -397,7 +397,7 @@
     ],
     formal: [
       'Traje de medianoche', 'Boda de invierno', 'Esmóquin de gala', 'Entrevista de lunes', 'Salón de baile',
-      'Corbata de seda', 'Vestido de etiqueta', 'Cena de empresa', 'Alfombra roja', 'Reloj y gemelos',
+      'Nudo de seda', 'Vestido de etiqueta', 'Cena de empresa', 'Alfombra roja', 'Reloj y gemelos',
       'Sastrería a medida', 'Discurso de graduación', 'Gala de otoño', 'Capilla de piedra', 'Cóctel de las siete',
       'Zapato de charol', 'Vestido de noche', 'Premios de la ciudad', 'Boda de primavera', 'Apertura de temporada',
       'Traje de lana', 'Mesa de honor', 'Protocolo estricto', 'Ceremonia de alba', 'Brindis final',

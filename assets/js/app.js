@@ -301,7 +301,7 @@
           <img src="${esc(outfit.image)}" alt="Outfit ${esc(outfit.styleName)} ${esc(outfit.genderLabel)}" loading="lazy">
           <span class="card-style">${esc(outfit.styleName)}</span>
           <span class="card-num">${String(outfit.index).padStart(2, '0')}</span>
-          <button class="card-fav${saved ? ' is-saved' : '}" type="button" data-fav="${esc(outfit.id)}"
+          <button class="card-fav${saved ? ' is-saved' : ''}" type="button" data-fav="${esc(outfit.id)}"
             aria-pressed="${saved}" aria-label="${saved ? 'Quitar de favoritos' : 'Guardar en favoritos'}">${saved ? '♥' : '♡'}</button>
         </div>
         <div class="card-info">
