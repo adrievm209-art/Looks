@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Elige tu colección en NOIR o descubre tu estilo con el test de 3 preguntas.">
+  <title>Elige tu universo · NOIR</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="select">
+
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">NOIR</span><span class="brand-dot"></span></a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="men.html">Hombre</a>
+      <a href="women.html">Mujer</a>
+      <button class="btn btn--small menu-trigger" type="button" data-open-search>✦ Buscar estilo</button>
+    </nav>
+  </header>
+
+  <main class="select-page">
+    <section class="select-hero">
+      <div class="wrap">
+        <span class="eyebrow">Paso 01 · Elige tu universo</span>
+        <h1>Dos miradas.<br><em>Un mismo código.</em></h1>
+        <p class="select-intro">Antes de explorar los 12 estilos, elige la colección que quieres descubrir. Cada una tiene 225 looks con explicación, paleta y consejos para combinarlos.</p>
+
+        <div class="select-grid">
+          <a class="select-card" href="men.html" data-preview="men">
+            <div class="select-preview"></div>
+            <div class="select-overlay"></div>
+            <div class="select-content">
+              <small>Colección 01</small>
+              <div class="select-symbol">
+                <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="26" cy="38" r="15"/><path d="M37 27 52 12M40 12h12v12"/></svg>
+              </div>
+              <h2>Hombre</h2>
+              <p>Sastrería, calle y siluetas depuradas. Nueve estilos, 225 looks.</p>
+              <span class="btn btn--small">Entrar →</span>
+            </div>
+          </a>
+          <a class="select-card" href="women.html" data-preview="women">
+            <div class="select-preview"></div>
+            <div class="select-overlay"></div>
+            <div class="select-content">
+              <small>Colección 02</small>
+              <div class="select-symbol">
+                <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="24" r="14"/><path d="M32 38v18M22 50h20"/></svg>
+              </div>
+              <h2>Mujer</h2>
+              <p>Romanticismo, minimalismo y carácter. Nueve estilos, 225 looks.</p>
+              <span class="btn btn--small">Entrar →</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="quiz-teaser">
+          <div>
+            <span class="eyebrow">¿No sabes cuál elegir?</span>
+            <h3 class="serif">Encuentra tu estilo en 3 preguntas</h3>
+            <p>Responde según tu forma de vestir y NOIR te recomendará un estilo con su paleta y sus looks.</p>
+          </div>
+          <button class="btn btn--solid" type="button" data-open-quiz>✦ Hacer el test</button>
+        </div>
+        <p style="text-align:center;margin-top:26px"><a class="back-link" href="index.html">← Volver al inicio</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div><a class="brand" href="index.html"><span class="brand-mark">NOIR</span></a><p>El estilo es una forma de silencio.</p></div>
+      <div class="footer-links"><a href="men.html">Hombre</a><a href="women.html">Mujer</a><a href="#" data-open-search>Estilos</a></div>
+    </div>
+  </footer>
+
+  <div id="search-overlay">
+    <aside class="search-panel" role="dialog" aria-label="Buscar por estilo">
+      <div class="search-panel-head">
+        <div><span class="eyebrow">Menú de búsqueda</span><h2 class="serif">Explora estilos</h2></div>
+        <button class="icon-close" type="button" data-close-search aria-label="Cerrar búsqueda">✕</button>
+      </div>
+      <div class="search-strip" id="search-strip"></div>
+      <input id="search-input" class="search-input" type="search" placeholder="Buscar un estilo…" aria-label="Buscar un estilo">
+      <div id="category-groups"></div>
+      <div class="search-note"><b>12 estilos · 450 looks.</b> Cada estilo abre 25 cards con colores, categoría y explicación.</div>
+    </aside>
+  </div>
+
+  <div id="detail-overlay"><div class="detail-box" role="dialog" aria-label="Detalle del outfit"></div></div>
+
+  <div id="choose-overlay">
+    <div class="choose-box" role="dialog" aria-label="Elegir colección">
+      <button id="choose-close" class="icon-close" type="button" aria-label="Cerrar">✕</button>
+      <span class="eyebrow">Estilo mixto</span>
+      <h3 id="choose-name" class="serif"></h3>
+      <p>Este estilo funciona en ambas colecciones. ¿Quieres verlo en hombre o en mujer?</p>
+      <div class="choose-actions">
+        <button class="btn" type="button" data-choose-gender="men">Hombre</button>
+        <button class="btn btn--ghost" type="button" data-choose-gender="women">Mujer</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="quiz-overlay">
+    <div class="quiz-box" role="dialog" aria-label="Test de estilo">
+      <button class="icon-close" type="button" data-close-quiz aria-label="Cerrar test">✕</button>
+      <div id="quiz-flow">
+        <div class="quiz-progress"><span id="quiz-step">Pregunta 1 de 3</span><div class="quiz-bar"><i id="quiz-bar-fill"></i></div></div>
+        <span class="eyebrow">Test NOIR</span>
+        <h2 id="quiz-question" class="serif"></h2>
+        <div id="quiz-options"></div>
+      </div>
+      <div id="quiz-result" class="hidden"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/manifest.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

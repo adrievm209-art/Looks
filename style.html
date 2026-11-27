@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lookbook de estilo NOIR · 25 outfits con paleta y explicación.">
+  <title>Estilo · NOIR</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="style">
+
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">NOIR</span><span class="brand-dot"></span></a>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="men.html">Hombre</a>
+      <a href="women.html">Mujer</a>
+      <button class="btn btn--small menu-trigger" type="button" data-open-search>✦ Buscar estilo</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <a class="back-link" href="index.html">← Volver al inicio</a>
+        <span class="eyebrow" id="page-eyebrow">Estilo</span>
+        <h1 id="page-title">Estilo</h1>
+        <p id="page-description"></p>
+        <div class="page-hero-actions">
+          <button class="btn btn--solid" type="button" data-random>✦ Elegir al azar</button>
+          <button class="btn btn--ghost" type="button" data-open-search>Buscar por estilo</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--top">
+      <div class="wrap">
+        <div class="filters hidden" id="style-filters"></div>
+        <div class="section-head">
+          <div><span class="eyebrow" id="page-count">25 looks registrados</span><h2>Looks del estilo</h2></div>
+          <p>Toca una card para ver su paleta de colores, categoría y una breve explicación del outfit.</p>
+        </div>
+        <div class="card-grid" id="card-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div><a class="brand" href="index.html"><span class="brand-mark">NOIR</span></a><p>El estilo es una forma de silencio.</p></div>
+      <div class="footer-links"><a href="men.html">Hombre</a><a href="women.html">Mujer</a><a href="#" data-open-search>Estilos</a></div>
+    </div>
+  </footer>
+
+  <div id="search-overlay">
+    <aside class="search-panel" role="dialog" aria-label="Buscar por estilo">
+      <div class="search-panel-head">
+        <div><span class="eyebrow">Menú de búsqueda</span><h2 class="serif">Explora estilos</h2></div>
+        <button class="icon-close" type="button" data-close-search aria-label="Cerrar búsqueda">✕</button>
+      </div>
+      <div class="search-strip" id="search-strip"></div>
+      <input id="search-input" class="search-input" type="search" placeholder="Buscar un estilo…" aria-label="Buscar un estilo">
+      <div id="category-groups"></div>
+      <div class="search-note"><b>Estilos disponibles en esta colección.</b> Cada estilo abre 25 cards con colores, categoría y explicación.</div>
+    </aside>
+  </div>
+
+  <div id="detail-overlay"><div class="detail-box" role="dialog" aria-label="Detalle del outfit"></div></div>
+
+  <div id="choose-overlay">
+    <div class="choose-box" role="dialog" aria-label="Elegir colección">
+      <button id="choose-close" class="icon-close" type="button" aria-label="Cerrar">✕</button>
+      <span class="eyebrow">Estilo mixto</span>
+      <h3 id="choose-name" class="serif"></h3>
+      <p>Este estilo funciona en ambas colecciones. ¿Quieres verlo en hombre o en mujer?</p>
+      <div class="choose-actions">
+        <button class="btn" type="button" data-choose-gender="men">Hombre</button>
+        <button class="btn btn--ghost" type="button" data-choose-gender="women">Mujer</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/manifest.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

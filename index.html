@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NOIR · Recomendaciones de outfits por estilo: old money, streetwear, vintage, gótico, clean fit y más.">
+  <title>NOIR · Guía de estilo</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="home">
+
+  <!-- Animación de entrada -->
+  <div id="splash" aria-label="Presentación de NOIR">
+    <div class="splash-ring"></div>
+    <span class="splash-spark" style="top:18%;left:26%;animation-delay:.1s"></span>
+    <span class="splash-spark" style="top:24%;right:22%;animation-delay:.7s"></span>
+    <span class="splash-spark" style="bottom:24%;left:30%;animation-delay:1.2s"></span>
+    <span class="splash-spark" style="bottom:18%;right:28%;animation-delay:.4s"></span>
+    <span class="splash-spark" style="top:48%;left:12%;animation-delay:1.6s"></span>
+    <span class="splash-spark" style="top:44%;right:13%;animation-delay:.9s"></span>
+    <div class="splash-center">
+      <div class="monogram"><span>N</span></div>
+      <h1 class="splash-title"><span>N</span><span>O</span><span>I</span><span>R</span></h1>
+      <div class="splash-sub">Estilo · Identidad · Elegancia</div>
+      <div class="splash-line"></div>
+    </div>
+    <button id="splash-sound" class="splash-sound" type="button" aria-pressed="true">♫ Sonido</button>
+    <button id="splash-skip" class="splash-skip" type="button">Omitir introducción</button>
+    <span id="splash-sound-hint" class="splash-sound-hint hidden">Toca para activar el sonido</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">NOIR</span><span class="brand-dot"></span></a>
+    <nav class="nav">
+      <a class="active" href="index.html">Inicio</a>
+      <a href="men.html">Hombre</a>
+      <a href="women.html">Mujer</a>
+      <button class="btn btn--small menu-trigger" type="button" data-open-search>✦ Buscar estilo</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="wrap hero-inner">
+        <span class="eyebrow">La guía de estilo que buscabas</span>
+        <h1>Viste tu<br><em>actitud.</em></h1>
+        <p>Descubre outfits curados por estilo, con paletas de color, prendas clave y una explicación clara para que sepas exactamente por qué funcionan.</p>
+        <div class="hero-actions">
+          <a class="btn btn--solid" href="select.html">Elegir Hombre o Mujer →</a>
+          <button class="btn btn--ghost" type="button" data-open-search>Buscar estilos</button>
+        </div>
+        <div class="hero-meta">
+          <div><strong>12</strong><span>Estilos</span></div>
+          <div><strong id="hero-count">450</strong><span>Looks registrados</span></div>
+          <div><strong>03</strong><span>Grupos</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap"><div class="divider"></div></div>
+
+    <section class="section section--top" id="colecciones">
+      <div class="wrap">
+        <div class="section-head">
+          <div><span class="eyebrow">Guía rápida</span><h2>Así funciona NOIR</h2></div>
+          <p>Tres pasos para pasar de la duda a un look concreto, con colores y consejos aplicables a tu armario.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><b>01</b><h3>Elige tu colección</h3><p>En la pantalla de selección decides si exploras Hombre o Mujer. También puedes hacer el test si aún no lo tienes claro.</p></div>
+          <div class="step"><b>02</b><h3>Filtra por estilo</h3><p>Usa el buscador para elegir entre 12 estilos agrupados como masculinos, femeninos o mixtos. Cada uno abre 25 looks.</p></div>
+          <div class="step"><b>03</b><h3>Aprende y guarda</h3><p>Cada card revela su paleta, cuándo usarla, cómo combinarla y qué evitar. Guarda tus favoritos con un clic.</p></div>
+        </div>
+        <p style="margin-top:24px"><a class="btn btn--small" href="select.html">Ir a la selección →</a></p>
+      </div>
+    </section>
+
+    <section class="section section--top">
+      <div class="wrap">
+        <div class="section-head">
+          <div><span class="eyebrow">Mapa de estilos</span><h2>Los 12 estilos de NOIR</h2></div>
+          <p>Reconócelos de un vistazo. Toca cualquiera para ver sus 25 looks con explicación detallada.</p>
+        </div>
+        <div class="style-map" id="style-map"></div>
+      </div>
+    </section>
+
+    <section class="section section--top">
+      <div class="wrap">
+        <div class="section-head">
+          <div><span class="eyebrow">Inspiración al azar</span><h2>Imágenes que inspiran</h2></div>
+          <p>Una selección aleatoria de todos los looks registrados. Toca cualquiera para descubrir su historia.</p>
+        </div>
+        <div class="mosaic" id="mosaic" aria-label="Galería aleatoria de outfits"></div>
+      </div>
+    </section>
+
+    <section class="section section--top">
+      <div class="wrap">
+        <div class="gender-card" style="grid-template-columns:1fr auto">
+          <div>
+            <small>¿Indeciso?</small>
+            <h3 class="serif">Que NOIR decida por ti</h3>
+            <p>Un estilo, un look y una paleta elegidos al azar. La mejor idea puede llegar sin buscarla.</p>
+          </div>
+          <button class="btn btn--solid" type="button" data-random>✦ Elegir al azar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--top">
+      <div class="wrap">
+        <div class="tip-box" id="tip-box" role="button" tabindex="0" title="Toca para ver otro consejo">
+          <div><span class="eyebrow">Consejo NOIR · toca para cambiar</span><p id="tip-text"></p></div>
+          <span style="color:var(--gold);font-size:1.4rem">↻</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div><a class="brand" href="index.html"><span class="brand-mark">NOIR</span></a><p>El estilo es una forma de silencio.</p></div>
+      <div class="footer-links"><a href="men.html">Hombre</a><a href="women.html">Mujer</a><a href="#" data-open-search>Estilos</a></div>
+    </div>
+  </footer>
+
+  <div id="search-overlay">
+    <aside class="search-panel" role="dialog" aria-label="Buscar por estilo">
+      <div class="search-panel-head">
+        <div><span class="eyebrow">Menú de búsqueda</span><h2 class="serif">Explora estilos</h2></div>
+        <button class="icon-close" type="button" data-close-search aria-label="Cerrar búsqueda">✕</button>
+      </div>
+      <div class="search-strip" id="search-strip"></div>
+      <input id="search-input" class="search-input" type="search" placeholder="Buscar un estilo…" aria-label="Buscar un estilo">
+      <div id="category-groups"></div>
+      <div class="search-note"><b>12 estilos · 450 looks.</b> Cada estilo abre 25 cards con colores, categoría y explicación. ¿No sabes cuál usar? Prueba el botón <b>al azar</b>.</div>
+    </aside>
+  </div>
+
+  <div id="detail-overlay"><div class="detail-box" role="dialog" aria-label="Detalle del outfit"></div></div>
+
+  <div id="choose-overlay">
+    <div class="choose-box" role="dialog" aria-label="Elegir colección">
+      <button id="choose-close" class="icon-close" type="button" aria-label="Cerrar">✕</button>
+      <span class="eyebrow">Estilo mixto</span>
+      <h3 id="choose-name" class="serif"></h3>
+      <p>Este estilo funciona en ambas colecciones. ¿Quieres verlo en hombre o en mujer?</p>
+      <div class="choose-actions">
+        <button class="btn" type="button" data-choose-gender="men">Hombre</button>
+        <button class="btn btn--ghost" type="button" data-choose-gender="women">Mujer</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/manifest
